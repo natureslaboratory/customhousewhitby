@@ -1,0 +1,94 @@
+.c-coming-soon {
+    background-image: url('/assets/images/custom_house_drone.png');
+    background-size: cover;
+    height: 100vh; 
+    background-position: 50% 50%;
+}
+
+.c-coming-soon__inner {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #1A8BC6 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.c-coming-soon__content {
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+    padding: 2rem 2.5rem;
+    margin-right: 8vw;
+    border-right: clamp(10px, 1vw, 25px) solid #DFDEC0;
+}
+
+.c-coming-soon__content h1 {
+    font-size: clamp(90px, 5vw, 120px);
+    font-weight: 400;
+    margin-bottom: clamp(2rem, 2vw, 3rem);
+}
+
+.c-coming-soon__content h2 {
+    font-size: clamp(55px, 2.7vw, 70px);
+    font-weight: 400;
+    margin-bottom: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+.c-coming-soon__content a {
+    font-size: 50px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem
+    
+}
+
+.c-coming-soon__content a img {
+    height: 50px;
+    position: relative;
+    top: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .c-coming-soon__inner {
+        background: #1a8ac6ab;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .c-coming-soon__content {
+        border-right: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .c-coming-soon__content h1 {
+        border-top: 10px solid #DFDEC0;
+        border-bottom: 10px solid #DFDEC0;
+        padding: 1rem 0;
+        font-size: 4rem;
+    }
+
+    .c-coming-soon__content h2 {
+        font-size: 2rem;
+    }
+
+    .c-coming-soon__content a {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem
+        
+    }
+    
+    .c-coming-soon__content a img {
+        height: 25px;
+        position: relative;
+        top: 1px;
+    }
+}
